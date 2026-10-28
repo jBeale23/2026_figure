@@ -71,11 +71,18 @@ To determine which test is applicable, you can generally follow this procedure:
 ### An Intro to Matplotlib
 [Matplotlib](https://matplotlib.org/) is a library for Python which allows for data visualization and graphing.
 
-1. Return to the JupyTer notebook and follow its instructions until you reach the "Challenges" section, and then return here.
+1. Return to the Jupyter notebook and follow its instructions until you reach the "Challenges" section, and then return here.
  - These exercises will focus on plotting and visualizing some of the data from the "Introduction to Polars" section.
 
 ---
 ### A Brief Guide on Debugging
+During today's challenge, and many times in your life while working with code, you'll likely find things that just don't work. When you do, it's important to understand how to go about fixing them, so here are a few general guidelines on how to troubleshoot and debug most programs.
+
+
+1. Start with the Error Message. Most of the time when something goes catastrophically wrong, you'll get a helpful error message that tries to convey what exactly happened. Always read these carefully, as they can often tell you what the problem is directly, or at least where to start looking. Sometimes the issue will be as simple as a misspelled function name or typing in the wrong order of parameters, and examining the error message closely will usually reveal problems like that. If it's not enough for you to deduce the issue on its own, it can help you get started with step 2.
+2. Consult Previous Work. If you grab a few relevant pieces of information from the Error Message, such as the type of error and the function and program in question, you can often find a solution to the error you're getting by searching with those keywords in Google. Sites such as [StackOverflow](https://stackoverflow.com) will often show up in the search results with people who have had similar issues and advice from others on how to resolve those issues. If those still aren't enough, you can always proceed to step 3.
+3. Consult the Documentation. For most pieces of software, especially major ones such as Polars, SciPy, and Matplotlib, the developers provide extensive documentation of nearly every function and how it works. Said documentation will often appear if you use a given function and piece of software's name to search on Google. This documentation usually has extensive explanations of all parameters for a function, often links to further reading on the underlying math in the case of statistical functions from SciPy, and usually links to related functions. Documentation such as this is often the best place to learn the intricate details of how to use something, but it is often more technical in nature than the other options.
+
 ---
 ## Challenges
 These are extra activities which shouldn't take you all that long, but will help reinforce some of the things we've practiced today. We'll discuss them during our next lesson, so don't worry if you aren't able to figure something out.
