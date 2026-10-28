@@ -52,10 +52,28 @@ To determine which test is applicable, you can generally follow this procedure:
 
 ---
 ### An Intro to Polars
+[Polars](https://pola.rs/) is a library for Python which is designed to make working with data straightforward, by enabling most of the kinds of functions which can be found in a typical spreadsheet program like Excel to be done programmatically.
+
+
+1. To get started, open the `introduction_to_statistics.ipynb` file in the `lesson_1` subdirectory of your local repository using Visual Studio Code.
+ - This is what's called a Jupyter notebook. It's a file designed to allow you to actively visualize and work with data in an iterative manner, and is commonly used in data science for prototyping and data exploration.
+ - These exercises will largely revolve around loading data, visualizing and summarizing it, and selecting particular subsets of it.
+2. Follow the instructions in the notebook until you reach the "Introduction to SciPy" section, and then return here.
+
 ---
 ### An Intro to SciPy
+[SciPy](https://scipy.org/) is a library for Python which is designed for data analysis. It offers a wide variety of statistical and machine learning functionalities.
+
+1. Return to the Jupyter notebook and follow its instructions until you reach the "Introduction to MatplotLib" section, and then return here.
+ - These exercises will focus on running some basic statistical tests to compare some of the groups in the data we looked at in the "Introduction to Polars" section.
+
 ---
 ### An Intro to Matplotlib
+[Matplotlib](https://matplotlib.org/) is a library for Python which allows for data visualization and graphing.
+
+1. Return to the JupyTer notebook and follow its instructions until you reach the "Challenges" section, and then return here.
+ - These exercises will focus on plotting and visualizing some of the data from the "Introduction to Polars" section.
+
 ---
 ### A Brief Guide on Debugging
 ---
