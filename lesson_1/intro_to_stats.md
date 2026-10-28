@@ -23,6 +23,17 @@ In the future, we'll start each lesson using the `git pull --rebase upstream mai
 
 ---
 ### What is a P-Value?
+In science, we usually think in terms of comparisons and hypotheses about those comparisons. For example, we often say something like, "If we treat these patients with a particular medicine, we expect that their condition will improve." What is being said here is that we want to compare the outcomes for two conditions -- those patients who receive a medicine and those who don't -- and an expectation of what we expect the outcome to be.
+
+
+Naturally, we want to be able to test this hypothesis, and quantify how likely it is that our hypothesis is wrong. To do so, we can establish what is called a "[null hypothesis](https://en.wikipedia.org/wiki/Statistical_hypothesis_test)". A null hypothesis is effectively the inverse of our stated hypothesis, so in our example, the null hypothesis would be that if we treat patients with this medicine, it will have no effect or make their condition worse.
+
+
+Once we have our comparison and our hypothesis about it, we then want to determine how likely it is to be correct. We can do so by calculating some kind of "test statistic" about the data, and then determine how likely it is that a test statistic which is at least as large as the one we calculated could have occurred if the null hypothesis is true. The likelihood we calculate for that to occur is a "p-value". If the resulting p-value is below a predefined threshold, then we reject the null hypothesis and say that the result is "significant". This isn't quite the same as saying that our hypothesis is correct, but for an experiment designed with appropriate controls, we can be fairly confident that our hypothesis explains at least some of what's going on.
+
+
+In cases where we're making multiple hypotheses -- E.G., that any one of multiple medications might improve patient conditions -- we run into an issue. As all a p-value says is that there's some small chance that the null hypothesis is true, if we're working at a p-value of 5% and do 100 tests, we'd expect 5 of those tests to come back as "significant" just due to random chance. We can account for this with a "multiple comparison correction." The two most common of these are the "[Bonferroni Correction](https://en.wikipedia.org/wiki/Bonferroni_correction)" and the "[Benjamini-Hochberg Procedure](https://en.wikipedia.org/wiki/False_discovery_rate#Benjamini%E2%80%93Hochberg_procedure)", with the latter usually being preferred in science.
+
 ---
 ### Parametric, Nonparametric, and the Central Limit Theorem
 ---
