@@ -36,6 +36,20 @@ In cases where we're making multiple hypotheses -- E.G., that any one of multipl
 
 ---
 ### Parametric, Nonparametric, and the Central Limit Theorem
+The [Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem) essentially says that if we sample from a distribution and calculate a test statistic, the distribution of that test statistic will eventually resemble a [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution#Standard_normal_distribution). These distributions have many useful properties, but the most useful for our purpose is that they show up all over the place in the real world, largely thanks to the Central Limit Theorem.
+
+
+This useful property means that we can often employ what are called "parametric" statistical tests in research. These tests require that the data they are used on is normally distributed, but offer a great deal of power in exchange, meaning that they are very good at rejecting the null hypothesis when there is a genuine difference present. Some examples of these include the t-test and the ANOVA.
+
+
+In some cases however, we aren't able to guarantee that a given set of data is normally distributed. In such a case, we use what is called a "nonparametric" statistical test. These tests typically have lower power, but they usually make fewer assumptions about the data, and thus they can be used even for data which isn't normal or has unequal variances between groups. Some examples of these include the Mann-Whitney U test, the Wilcoxon matched-pairs test, and the Kruskal-Wallis test.
+
+
+To determine which test is applicable, you can generally follow this procedure:
+1. Determine if the data is normally distributed or not. This can often be done via the [Shapiro-Wilk Test](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test), where we say that the data is likely to be normally distributed if the p-value of the test is greater than our predefined threshold (typically 0.05). Once you know if your data is normal -- and thus able to use parametric tests -- or not, proceed to step 2.
+2. Determine how many groups you are comparing. If you're comparing more than two groups, you'll usually want to use the parametric ANOVA test or the nonparametric Kruskal-Wallis test. Meanwhile if you're only comparing two groups, continue to step 3.
+3. Determine if the groups are paired or unpaired. Samples being paired means that they depend on each other in some way. E.G. perhaps your measurements are the blood pressures of patients before and after undergoing some kind of treatment. In such a case, the measurements for each individual are paired. If the measurements were instead from two unrelated groups, one of which underwent treatment and one of which did not, the groups would be unpaired. In the case of paired samples, you can use the parametric paired-samples t-test or the nonparametric Wilcoxon matched-pairs test. In the case of unpaired samples, you can typically use the parametric independent samples t-test or the nonparametric Mann-Whitney U test.
+
 ---
 ### An Intro to Polars
 ---
