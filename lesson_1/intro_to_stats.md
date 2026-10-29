@@ -87,5 +87,4 @@ During today's challenge, and many times in your life while working with code, y
 ## Challenges
 These are extra activities which shouldn't take you all that long, but will help reinforce some of the things we've practiced today. We'll discuss them during our next lesson, so don't worry if you aren't able to figure something out.
 1. Pick two features we haven't already plotted from the Iris dataset, and plot the three flower types using those features. Then calculate the p-value for each of those features being capable of distinguishing between the flower types.
-2. Add the figures you've generated to your .gitignore file.
-3. Commit the changes you've made to GitHub.
+2. Commit the changes you've made to GitHub.
