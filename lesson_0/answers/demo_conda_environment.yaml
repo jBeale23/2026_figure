@@ -1,0 +1,15 @@
+---
+name: 2026_figure
+channels:
+  - conda-forge
+dependencies:
+  - python==3.12
+  - numpy>=2.0.0
+  - scipy
+  - polars
+  - pyarrow
+  - matplotlib
+  - seaborn
+  - pip
+  - pip:
+      - flippr
