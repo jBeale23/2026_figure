@@ -5,3 +5,6 @@ This repository hosts the lesson notes and exercises for the 2026 Fried Lab FIGU
 
 
 [Lesson 1: An Introduction to Statistics](lesson_1/intro_to_stats.md)
+
+
+[Lesson 2: Dealing with Many Variables](lesson_2/multiple_variables.md)
