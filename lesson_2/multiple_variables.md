@@ -15,3 +15,10 @@ As with last week, the first step for today is to update your local repository. 
 3. Run `git push --force origin main`.
 
 ---
+### Some Necessary Software
+In addition to `polars`, `scipy`, and `matplotlib` like we worked with last week, we'll need to add a few additional packages to our environment. These packages revolve around machine learning techniques which we can use to handle data with more than a single predictor variable. If you need help with adding them to your Conda environment, take a look at the instructions for updating an environment in [lesson 0](../lesson_0/getting_started.md). Both of these packages are available from Conda itself, so there's no need to worry about adding them to your pip install block.
+
+- `scikit-learn`
+- `umap-learn`
+
+---
