@@ -3,8 +3,6 @@
 ## Objectives
 - Learn how to visualize multivariate data with UMAP
 - Learn the basics of multivariate linear regression
-- Learn the importance of cross validation
-- Learn the basics of feature selection
 ---
 ### Updating a Git Repository
 As with last week, the first step for today is to update your local repository. The instructions below are directly copied from [lesson 1](../lesson_1/intro_to_stats.md), and you'll use them at the start of every subsequent lesson.
