@@ -49,3 +49,7 @@ To combat this problem, we can apply scaling to our data so that each variable h
 1. Return to the Jupyter notebook and follow its instructions until you reach the "Challenges" section, and then return here.
 
 ---
+## Challenges
+These are extra activities which shouldn't take you all that long, but will help reinforce some of the things we've practiced today. We'll discuss them during our next lesson, so don't worry if you aren't able to figure something out.
+1. Repeat the UMAP of the iris datasets with UMAP 1 and UMAP 2, but scale our predictor variables before running the UMAP. Did anything change? Why do you think that's the case?
+2. Commit the changes you've made to GitHub.
