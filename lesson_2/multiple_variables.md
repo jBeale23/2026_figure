@@ -34,3 +34,18 @@ One such technique which is useful in this regard is [UMAP](https://en.wikipedia
 2. Follow the instructions in the notebook until you reach the "Introduction to Multivariate Linear Regression" section, and then return here.
 
 ---
+### The Problem of Multiple Variables - Part II
+Beyond just visualizing our data, multiple predictors pose a challenge in that many traditional statistical tests operate on a single variable at a time. While we _could_ approach resolving this by simply running an independent test for each variable and applying a multiple hypothesis correction, that only works in cases where we only care _if_ a given factor is predictive on its own. If instead we want to try and do things like predict outcomes given information about a subject or determine how important a given factor is, we need to take a different approach.
+
+
+Thus enter, linear regression. Much like you can fit a line to points in two dimensional space by providing a slope and intercept and then optimizing them based on the average distance of the line from each point, we can do the same in higher dimensional space to! In such a case, we simply need to determine a slope for each additional dimension of interest, and we can once again fit a line to use in predicting our outcomes of interest.
+
+
+Moreover, we can also proceed to determine how much any given variable matters after we've fit our line. In general, a larger slope for a given feature indicates that it does a better job of predicting our outcomes, though we'll go more into feature selection in a later lesson. This comes with a massive caveat however, for this to be true, the magnitude of each feature must be the same. For example, it may make sense to measure the wavelength a protein fluoresces at in nanometers, and the concentration of said protein in milligrams per milliliter. If you're attempting to use both in a predictive model, it probably doesn't make much sense to assume that a slope of 0.2 for the wavelength and 0.2 for the concentration mean the same thing, as the magnitudes of the measurements aren't comparable.
+
+
+To combat this problem, we can apply scaling to our data so that each variable has the same magnitude. There are many possible ways to do so, ranging from simply dividing by the largest absolute value for each variable to more complex methods which aim to scale and center the data at 0. Fortunately, scikit-learn packages these techniques for us.
+
+1. Return to the Jupyter notebook and follow its instructions until you reach the "Challenges" section, and then return here.
+
+---
