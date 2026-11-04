@@ -22,3 +22,17 @@ In addition to `polars`, `scipy`, and `matplotlib` like we worked with last week
 - `umap-learn`
 
 ---
+### The Problem of Multiple Variables - Part I
+Oftentimes in science, we're interested not just in if one condition can affect outcomes, but if multiple do. For example, if we're looking at a clinical study, we might be interested in seeing not only how patient outcomes vary by treatment received, but also how outcomes vary by the patient's age, their weight, and so on and so forth.
+
+
+To begin with, we often want to try and visualize our data to see if any particular groupings happen to stand out. This works well as long as we only have two or three variables we want to visualize, but grows increasingly difficult the more factors that we want to consider. In such cases we can apply a technique for [dimensionality reduction](https://en.wikipedia.org/wiki/Dimensionality_reduction) to our data. These techniques work by effectively compressing the information contained across many variables into a smaller number which we can then visualize.
+
+
+One such technique which is useful in this regard is [UMAP](https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction#Uniform_manifold_approximation_and_projection). This technique calculates the likelihood that points in multivariate space are related, and by iteratively pushing unrelated points apart and pulling related points together, can reconstruct a representation of those relationships using a more manageable number of factors.
+
+
+1. To get started, open the `dealing_with_multiple_variables.ipynb` file in the `lesson_2` subdirectory of your local repository using Visual Studio Code.
+2. Follow the instructions in the notebook until you reach the "Introduction to Multivariate Linear Regression" section, and then return here.
+
+---
