@@ -8,3 +8,6 @@ This repository hosts the lesson notes and exercises for the 2026 Fried Lab FIGU
 
 
 [Lesson 2: Dealing with Many Variables](lesson_2/multiple_variables.md)
+
+
+[Lesson 3: An Introduction to Mass Spectrometry Analysis](lesson_3/intro_to_mass_spectrometry_analysis.md)
