@@ -23,6 +23,7 @@ To this end, we will be working with data from the work of [Koopmans _et. al._](
 
 
 1. Download the required `diann.zip` data file by navigating to your local `lesson_3` directory in Bash and running the following command: `curl ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2026/03/PXD058441/diann.zip -O`. You can then unzip the retrieved `diann.zip` file using `unzip diann.zip`.
+ - As an aside, `curl` is a general purpose command for interacting with web links at the terminal. It can be used for downloading and uploading files, along with many other purposes. You can read through its manual page if you're interested in learning more by running `man curl` in your Bash terminal.
 2. To get started with the analysis, open the `mass_spectrometry_analysis.ipynb` file in the `lesson_3` subdirectory of your local repository using Visual Studio Code.
 3. Follow the instructions provided in the notebook until you reach the end.
 
